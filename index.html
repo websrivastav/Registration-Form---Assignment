@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Assignment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yantramanav">
+    <style>
+        *{
+            font-family: Yantramanav;
+        }
+        ::placeholder{
+            color: #000;
+        }
+        body{
+            background-image: url(https://img.freepik.com/free-vector/gradient-galaxy-background_52683-64650.jpg?w=1060&t=st=1674410514~exp=1674411114~hmac=ec3779d49d8cd7b191a47177146c3e47733a110f9575fee5f7bb3c7c8f4ef107);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .mans_form{
+            max-width: 800px;
+            margin: 0 auto;
+            border:4px solid #011844;
+            padding: 30px;
+  background-color:#ffffffb1;
+        }
+        p{
+            font-family: Yantramanav;
+            font-size: 26px;
+            font-weight: 500;
+        }
+        label, h5{
+            font-family: Yantramanav;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        
+        form ul li{
+            margin-bottom: 20px;    
+        }
+        input, select {
+            border:2px solid #000;
+            height:40px;
+            width: 300px;
+            font-size: 16px;
+            font-family: Yantramanav;
+            padding: 0px 5px;
+        }
+        
+        input[type="radio"]{
+            width:auto;
+            height:auto;
+            font-family: Yantramanav;
+        }
+        input[type="submit"], input[type="reset"]{
+            width:auto;
+            height:auto;
+            font-family: Yantramanav;
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .first_sec, .second_sec, .third_sec, .forth_sec{
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #d4d4d4;
+        }
+    </style>
+</head>
+<body>
+    <div class="mans_form">
+        <h1 style="font-family:Archivo Black;border-bottom: 2px solid #000;margin-bottom: 40px;">Registration Form</h1>
+        <p>Enter Your details below</p> 
+        <form action="#" method="post">
+            <div class="first_sec">
+            <ul>
+                <li><input type="email" name="email_id" placeholder="your_email@gmail.com" id="emailid" /></li>
+                <li><input type="password" name="password" placeholder="Password" min="8" maxlength="20"  id="password_form"/></li>
+           
+                
+            <li style="list-style:none;"><h5><em><strong>!Type a complex password with 8-20 characters.</strong></em> </h5></li>
+            
+                <li><input type="tel" name="phone_number" placeholder="+20 Phone Number" id="phone"/></li>
+                </ul> 
+            </div> 
+                
+                <div class="second_sec">
+                <h4 style="font-family:Yantramanav;margin-bottom: 20px;font-size: 26px;margin-top: 0;"><em>Enter Your Profession:</em></h4>
+
+                <ul>
+                    <li style="font-size: 18px;">
+                        <input type="radio" name="desig" id="students" /> <label for="students">Student</label>
+                        <input type="radio" name="desig" id="teachers" /> <label for="teachers">Teacher</label>
+                        <input type="radio" name="desig" id="developers" /> <label for="developers">Developer</label></li>
+                    <li><input type="password" name="password" placeholder="Password" min="8" max="20" /></li>
+           </ul>    
+           <label>Choose the stage if you are (student) </label> 
+                        <select>
+                            <option value="first_group">First Primary</option>
+                            <option value="second_group">Second Primary</option>
+                            <option value="third_group">Third Primary</option>
+                            <option value="Fourth_group">Fourth Primary</option>
+                    </select>
+           </div>
+           
+           <div class="third_sec">
+           <ul>
+            <li><label for="dob">Enter your Birth date.</label><input type="date" name="dobb" id="dob" /></li>
+           </ul>
+        </div>
+        <div class="forth_sec">
+            <ul>
+             <li><input type="text" name="note" id="notes" placeholder="Any Notes" /></li>
+            </ul>
+         </div>
+
+         <div class="final_sec">
+            <input type="submit" value="Submit" id="submit-form">
+            <input type="reset" value="Reset" id="reset-form">
+         </div>
+        </form>
+    </div>
+</body>
+</html>
